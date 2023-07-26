@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6waCfT1H9ucVGbFdkHkenc4QZ2nshuWIc81pGC/cdnI=",
+  "Source": "AccountManagementMicroservice",
+  "BasePath": "_content/AccountManagementMicroservice",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  microservice1:
+    image: micro1
+    restart: on-failure
+    ports:
+      - "6601:80"
+    build:
+      context: ./BankManagementMicroservice
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "BankManagementBd"
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "1111"
+    volumes:
+      - ./scripts:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
