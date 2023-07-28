@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AccountInformationMicroservice.IServices/1.0.0": {
+        "dependencies": {
+          "AccountInformationMicroservice.DTOs": "1.0.0"
+        },
+        "runtime": {
+          "AccountInformationMicroservice.IServices.dll": {}
+        }
+      },
+      "AccountInformationMicroservice.DTOs/1.0.0": {
+        "runtime": {
+          "AccountInformationMicroservice.DTOs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AccountInformationMicroservice.IServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AccountInformationMicroservice.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

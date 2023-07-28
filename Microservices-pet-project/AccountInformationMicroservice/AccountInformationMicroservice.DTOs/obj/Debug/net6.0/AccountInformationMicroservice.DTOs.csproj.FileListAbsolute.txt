@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\bin\Debug\net6.0\AccountInformationMicroservice.DTOs.deps.json
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\bin\Debug\net6.0\AccountInformationMicroservice.DTOs.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\bin\Debug\net6.0\AccountInformationMicroservice.DTOs.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\obj\Debug\net6.0\AccountInformationMicroservice.DTOs.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\obj\Debug\net6.0\AccountInformationMicroservice.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\obj\Debug\net6.0\AccountInformationMicroservice.DTOs.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\obj\Debug\net6.0\AccountInformationMicroservice.DTOs.AssemblyInfo.cs
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\obj\Debug\net6.0\AccountInformationMicroservice.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\obj\Debug\net6.0\AccountInformationMicroservice.DTOs.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\obj\Debug\net6.0\refint\AccountInformationMicroservice.DTOs.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\obj\Debug\net6.0\AccountInformationMicroservice.DTOs.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.DTOs\obj\Debug\net6.0\ref\AccountInformationMicroservice.DTOs.dll

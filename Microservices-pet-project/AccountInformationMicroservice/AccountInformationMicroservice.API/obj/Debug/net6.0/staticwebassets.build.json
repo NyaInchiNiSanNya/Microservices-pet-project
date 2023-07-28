@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "E1q8wlRJ1s1b+FoC+BMFlDLttQlGoCb4I1v/C1Mg0ao=",
+  "Source": "AccountInformationMicroservice.API",
+  "BasePath": "_content/AccountInformationMicroservice.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

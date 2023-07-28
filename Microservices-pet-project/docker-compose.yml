@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  microservice1:
-    image: micro1
+  bank_management_microservice:
+    image: bank_management_microservice
     restart: on-failure
     ports:
       - "6601:80"
@@ -11,6 +11,16 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - postgres
+  account_information_microservice:
+    image: account_information_microservice
+    restart: on-failure
+    ports:
+      - "6602:80"
+    build:
+      context: ./AccountInformationMicroservice
+      dockerfile: Dockerfile
+    depends_on:
+      - mongodb
   postgres:
     image: postgres:13.3
     environment:
@@ -18,6 +28,14 @@ services:
       POSTGRES_USER: "user"
       POSTGRES_PASSWORD: "1111"
     volumes:
-      - ./scripts:/docker-entrypoint-initdb.d
+      - ./postgres_scripts:/docker-entrypoint-initdb.d
     ports:
       - "5432:5432"
+  mongodb:
+    image: mongo
+    ports:
+      - "27018:27017"
+    volumes:
+      - ./mongo_scripts:/docker-entrypoint-initdb.d
+volumes:
+  mongodb_data:
