@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\obj\Debug\net6.0\Orchestrator.MessagingService.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\obj\Debug\net6.0\Orchestrator.MessagingService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\obj\Debug\net6.0\Orchestrator.MessagingService.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\obj\Debug\net6.0\Orchestrator.MessagingService.AssemblyInfo.cs
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\obj\Debug\net6.0\Orchestrator.MessagingService.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\bin\Debug\net6.0\Orchestrator.MessagingService.deps.json
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\bin\Debug\net6.0\Orchestrator.MessagingService.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\bin\Debug\net6.0\Orchestrator.MessagingService.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\bin\Debug\net6.0\Orchestrator.IService.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\bin\Debug\net6.0\Orchestrator.SharedModels.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\bin\Debug\net6.0\Orchestrator.IService.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\bin\Debug\net6.0\Orchestrator.SharedModels.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\obj\Debug\net6.0\Orchestrator.MessagingService.csproj.CopyComplete
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\obj\Debug\net6.0\Orchestrator.MessagingService.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\obj\Debug\net6.0\refint\Orchestrator.MessagingService.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\obj\Debug\net6.0\Orchestrator.MessagingService.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.MessagingService\obj\Debug\net6.0\ref\Orchestrator.MessagingService.dll

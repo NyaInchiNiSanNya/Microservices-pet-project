@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4M+UyOKhhWs/hoZlSHm7P28+s8wNVCtQDBIcRCgrbxQ=",
+  "Source": "Orchestrator.API",
+  "BasePath": "_content/Orchestrator.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

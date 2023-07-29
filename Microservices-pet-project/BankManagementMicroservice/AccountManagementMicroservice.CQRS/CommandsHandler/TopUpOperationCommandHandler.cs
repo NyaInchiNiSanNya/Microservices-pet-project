@@ -25,7 +25,7 @@ namespace AccountManagementMicroservice.CQRS.CommandsHandler
             if (String.IsNullOrEmpty(request.accountName) ||
                 request.summToTopUp <= 0)
             {
-                throw new ArgumentException(nameof(request.summToTopUp));
+                throw new ArgumentException(nameof(request));
             }
 
             var account = await _bankContext.Accounts

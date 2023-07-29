@@ -43,6 +43,9 @@
               },
               "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\AccountInformationMicroservice\\AccountInformationMicroservice.Services\\AccountInformationMicroservice.Services.csproj": {
                 "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\AccountInformationMicroservice\\AccountInformationMicroservice.Services\\AccountInformationMicroservice.Services.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.MessagingService\\AccountManagementMicroservice.MessagingService.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.MessagingService\\AccountManagementMicroservice.MessagingService.csproj"
               }
             }
           }
@@ -72,6 +75,14 @@
             "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[11.6.0, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.0.16, )"
             },
             "MediatR": {
               "target": "Package",
@@ -401,6 +412,492 @@
               "version": "[12.1.1, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.BusinessLogic\\AccountManagementMicroservice.BusinessLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.BusinessLogic\\AccountManagementMicroservice.BusinessLogic.csproj",
+        "projectName": "AccountManagementMicroservice.BusinessLogic",
+        "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.BusinessLogic\\AccountManagementMicroservice.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.BusinessLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.CQRS\\AccountManagementMicroservice.CQRS.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.CQRS\\AccountManagementMicroservice.CQRS.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.IServices\\AccountManagementMicroservice.IServices.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.IServices\\AccountManagementMicroservice.IServices.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.CQRS\\AccountManagementMicroservice.CQRS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.CQRS\\AccountManagementMicroservice.CQRS.csproj",
+        "projectName": "AccountManagementMicroservice.CQRS",
+        "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.CQRS\\AccountManagementMicroservice.CQRS.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.CQRS\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.Data\\AccountManagementMicroservice.Data.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.Data\\AccountManagementMicroservice.Data.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.DTOs\\AccountManagementMicroservice.DTOs.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.DTOs\\AccountManagementMicroservice.DTOs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.Data\\AccountManagementMicroservice.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.Data\\AccountManagementMicroservice.Data.csproj",
+        "projectName": "AccountManagementMicroservice.Data",
+        "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.Data\\AccountManagementMicroservice.Data.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.DTOs\\AccountManagementMicroservice.DTOs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.DTOs\\AccountManagementMicroservice.DTOs.csproj",
+        "projectName": "AccountManagementMicroservice.DTOs",
+        "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.DTOs\\AccountManagementMicroservice.DTOs.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.DTOs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.IServices\\AccountManagementMicroservice.IServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.IServices\\AccountManagementMicroservice.IServices.csproj",
+        "projectName": "AccountManagementMicroservice.IServices",
+        "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.IServices\\AccountManagementMicroservice.IServices.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.IServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.DTOs\\AccountManagementMicroservice.DTOs.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.DTOs\\AccountManagementMicroservice.DTOs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.MessagingService\\AccountManagementMicroservice.MessagingService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.MessagingService\\AccountManagementMicroservice.MessagingService.csproj",
+        "projectName": "AccountManagementMicroservice.MessagingService",
+        "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.MessagingService\\AccountManagementMicroservice.MessagingService.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.MessagingService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.BusinessLogic\\AccountManagementMicroservice.BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.BusinessLogic\\AccountManagementMicroservice.BusinessLogic.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.SharedModels\\AccountManagementMicroservice.SharedModels.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.SharedModels\\AccountManagementMicroservice.SharedModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.6.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.6.0, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.SharedModels\\AccountManagementMicroservice.SharedModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.SharedModels\\AccountManagementMicroservice.SharedModels.csproj",
+        "projectName": "AccountManagementMicroservice.SharedModels",
+        "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.SharedModels\\AccountManagementMicroservice.SharedModels.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.SharedModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

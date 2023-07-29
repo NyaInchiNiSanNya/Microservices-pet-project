@@ -2,9 +2,14 @@ using AccountManagementMicroservice.BusinessLogic;
 using AccountManagementMicroservice.CQRS.CommandsHandler;
 using AccountManagementMicroservice.Data;
 using AccountManagementMicroservice.IServices;
+using AccountManagementMicroservice.MessagingService;
 using AccountManagementMicroservice.RequestModel;
+using AccountManagementMicroservice.SharedModels;
+using AccountManagementMicroservice.SharedModels.Requests;
 using FluentValidation;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
+
 
     namespace BankManagementMicroservice
 {
@@ -27,9 +32,33 @@ using Microsoft.EntityFrameworkCore;
                 opt.UseNpgsql(connString);
 
             });
+            
+            builder.Services.AddMassTransit(x =>
+            {
+                x.AddConsumer<WithdrawalMessageService>();
+
+                x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
+                {
+                    config.Host("rabbitmq://localhost", h =>
+                    {
+                        h.Username("guest");
+                        h.Password("guest");
+                    });
+
+                    config.ReceiveEndpoint("withdrawal_queue", ep =>
+                    {
+                        ep.PrefetchCount = 16;
+                        ep.UseMessageRetry(r => r.Interval(2, 100));
+                        ep.ConfigureConsumer<WithdrawalMessageService>(provider);
+                        ep.Bind<WithdrawalOperationRequest>(); 
+                    });
+                }));
+            });
+
             builder.Services.AddValidatorsFromAssemblyContaining<PostWithdrawalRequest>();
             builder.Services.AddAutoMapper(typeof(Program));
             builder.Services.AddScoped<IWithdrawOperationService, WithdrawOperationService>();
+            builder.Services.AddScoped<IAccountInformationService,AccountInformationService>();
             builder.Services.AddScoped<ITopUpOperationService, TopUpOperationService>();
             builder.Services.AddMediatR(
                 cfg =>

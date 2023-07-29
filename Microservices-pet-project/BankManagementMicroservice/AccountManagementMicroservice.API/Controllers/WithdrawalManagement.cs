@@ -17,10 +17,12 @@ namespace BankManagementMicroservice.Controllers
         private readonly IValidator<PostWithdrawalRequest> _operationValidator;
         private readonly IWithdrawOperationService _withdrawOperation;
         private readonly IMapper _mapper;
+        private readonly IAccountInformationService _accountInformationService;
 
         public WithdrawalManagement(IValidator<PostWithdrawalRequest> operationValidator
             , IWithdrawOperationService withdrawOperation
-            ,IMapper mapper)
+            ,IMapper mapper
+            , IAccountInformationService accountInformationService)
         {
             _operationValidator = operationValidator ?? 
                                   throw new NullReferenceException(nameof(operationValidator));
@@ -28,6 +30,9 @@ namespace BankManagementMicroservice.Controllers
                                  throw new NullReferenceException(nameof(withdrawOperation));
             _mapper = mapper ?? 
                       throw new NullReferenceException(nameof(mapper));
+
+            _accountInformationService = accountInformationService ??
+                                         throw new NullReferenceException(nameof(accountInformationService));
         }
 
         [HttpPost]
@@ -43,7 +48,7 @@ namespace BankManagementMicroservice.Controllers
 
             await _withdrawOperation.WithdrawMoneyFromAccount(_mapper.Map<WithdrawalOperationDto>(request));
 
-            return Ok();
+            return Ok(await _accountInformationService.GetAccountBalance(request.AccountName));
         }
     }
 }

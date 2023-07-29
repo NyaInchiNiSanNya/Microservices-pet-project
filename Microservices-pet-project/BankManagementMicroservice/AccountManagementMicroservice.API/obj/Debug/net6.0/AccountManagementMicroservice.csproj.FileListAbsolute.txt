@@ -138,3 +138,14 @@ C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankMa
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\obj\Debug\net6.0\AccountManagementMicroservice.csproj.CopyComplete
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\obj\Debug\net6.0\AccountManagementMicroservice.genruntimeconfig.cache
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\obj\Debug\net6.0\ref\AccountManagementMicroservice.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\MassTransit.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\MassTransit.Abstractions.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\System.Threading.Channels.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\AccountManagementMicroservice.MessagingService.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\AccountManagementMicroservice.SharedModels.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\AccountManagementMicroservice.MessagingService.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\BankManagementMicroservice\AccountManagementMicroservice.API\bin\Debug\net6.0\AccountManagementMicroservice.SharedModels.pdb

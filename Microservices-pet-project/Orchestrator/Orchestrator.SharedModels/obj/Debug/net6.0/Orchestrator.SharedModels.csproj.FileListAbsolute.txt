@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\bin\Debug\net6.0\Orchestrator.SharedModels.deps.json
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\bin\Debug\net6.0\Orchestrator.SharedModels.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\bin\Debug\net6.0\Orchestrator.SharedModels.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\obj\Debug\net6.0\Orchestrator.SharedModels.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\obj\Debug\net6.0\Orchestrator.SharedModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\obj\Debug\net6.0\Orchestrator.SharedModels.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\obj\Debug\net6.0\Orchestrator.SharedModels.AssemblyInfo.cs
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\obj\Debug\net6.0\Orchestrator.SharedModels.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\obj\Debug\net6.0\Orchestrator.SharedModels.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\obj\Debug\net6.0\refint\Orchestrator.SharedModels.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\obj\Debug\net6.0\Orchestrator.SharedModels.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.SharedModels\obj\Debug\net6.0\ref\Orchestrator.SharedModels.dll

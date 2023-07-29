@@ -17,10 +17,12 @@ namespace AccountManagementMicroservice.Controllers
         private readonly IValidator<PostTopUpRequest> _operationValidator;
         private readonly ITopUpOperationService _topUpOperation;
         private readonly IMapper _mapper;
+        private readonly IAccountInformationService _accountInformationService;
 
         public WithdrawalManagement(IValidator<PostTopUpRequest> operationValidator
             , ITopUpOperationService topUpOperation
-            , IMapper mapper)
+            , IMapper mapper
+            , IAccountInformationService accountInformationService)
         {
             _operationValidator = operationValidator ??
                                   throw new NullReferenceException(nameof(operationValidator));
@@ -28,6 +30,9 @@ namespace AccountManagementMicroservice.Controllers
                               throw new NullReferenceException(nameof(topUpOperation));
             _mapper = mapper ??
                       throw new NullReferenceException(nameof(mapper));
+
+            _accountInformationService = accountInformationService ??
+                                         throw new NullReferenceException(nameof(accountInformationService));
         }
 
         [HttpPost]
@@ -43,7 +48,7 @@ namespace AccountManagementMicroservice.Controllers
 
             await _topUpOperation.TopUpMoneyToAccount(_mapper.Map<TopUpOperationDto>(request));
 
-            return Ok();
+            return Ok(await _accountInformationService.GetAccountBalance(request.AccountName));
         }
     }
 }

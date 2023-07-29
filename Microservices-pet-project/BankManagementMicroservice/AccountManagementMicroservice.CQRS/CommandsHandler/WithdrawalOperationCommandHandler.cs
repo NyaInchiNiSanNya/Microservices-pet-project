@@ -20,7 +20,7 @@ namespace AccountManagementMicroservice.CQRS.CommandsHandler
            if(String.IsNullOrEmpty(request.accountName) || 
               request.summToWithdrawal<=0)
            {
-               throw new ArgumentException(nameof(request.summToWithdrawal));
+               throw new ArgumentException(nameof(request));
            }
 
            var account = await _bankContext.Accounts
