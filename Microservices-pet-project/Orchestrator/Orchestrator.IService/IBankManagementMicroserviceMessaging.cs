@@ -2,9 +2,9 @@
 
 namespace Orchestrator.IService
 {
-    public interface IBankManagementMicroserviceMessaging
+    public interface IBankInformationMicroserviceMessaging
     {
-        public Task<Decimal> SendWithdrawalOperationMessage(WithdrawalOperationRequest withdrawalOperationRequestModel);
-        public Task<Decimal> SendReplenishmentOperationMessage(ReplenishmentOperationRequest replenishmentOperationRequestModel);
+        public Task SendWithdrawalOperationMessage(WithdrawalOperationRequest withdrawalOperationRequestModel);
+        public Task<> SendReplenishmentOperationMessage(ReplenishmentOperationRequest replenishmentOperationRequestModel);
     }
 }

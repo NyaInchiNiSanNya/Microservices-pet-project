@@ -37,6 +37,7 @@ namespace BankManagementMicroservice
             builder.Services.AddMassTransit(x =>
             {
                 x.AddConsumer<WithdrawalMessageService>();
+                x.AddConsumer<ReplenishmentMessageService>();
 
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
                 {
@@ -51,6 +52,7 @@ namespace BankManagementMicroservice
                         ep.PrefetchCount = 16;
                         ep.UseMessageRetry(r => r.Interval(2, 100));
                         ep.ConfigureConsumer<WithdrawalMessageService>(provider);
+                        ep.ConfigureConsumer<ReplenishmentMessageService>(provider);
                     });
 
                 }));
@@ -60,7 +62,6 @@ namespace BankManagementMicroservice
             builder.Services.AddValidatorsFromAssemblyContaining<PostWithdrawalRequest>();
             builder.Services.AddValidatorsFromAssemblyContaining<ReplenishmentOperationRequestValidator>();
             builder.Services.AddAutoMapper(typeof(Program));
-            builder.Services.AddAutoMapper(typeof(TopUpOperationProfile));
             builder.Services.AddScoped<IWithdrawOperationService, WithdrawOperationService>();
             builder.Services.AddScoped<IAccountInformationService,AccountInformationService>();
             builder.Services.AddScoped<ITopUpOperationService, TopUpOperationService>();

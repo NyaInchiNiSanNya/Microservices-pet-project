@@ -22,11 +22,11 @@ namespace AccountManagementMicroservice.BusinessLogic
 
         public async Task TopUpMoneyToAccount(TopUpOperationDto topUpOperationDto)
         {
-            //await _mediator.Send(new TopUpOperationCommand()
-            //{
-            //    summToTopUp = topUpOperationDto.TopUpAmount,
-            //    accountName = topUpOperationDto.AccountName
-            //});
+            await _mediator.Send(new TopUpOperationCommand()
+            {
+                summToTopUp = topUpOperationDto.TopUpAmount,
+                accountName = topUpOperationDto.AccountName
+            });
         }
     }
 }

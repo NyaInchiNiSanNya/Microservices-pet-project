@@ -31,6 +31,10 @@ namespace Orchestrator.MessagingService
             {
                 throw new NullReferenceException(nameof(withdrawalOperationRequestModel));
             }
+            if (response.Message.AccountBalance<0)
+            {
+                throw new InvalidOperationException(nameof(response));
+            }
 
             return response.Message.AccountBalance;
         }

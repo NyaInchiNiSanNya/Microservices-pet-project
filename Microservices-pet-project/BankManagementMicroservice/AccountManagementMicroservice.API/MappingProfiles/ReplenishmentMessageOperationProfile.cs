@@ -4,14 +4,14 @@ using ShareModel.Requests;
 
 namespace AccountManagementMicroservice.MappingProfiles
 {
-    public class WithdrawalOperationProfile:Profile
+    public class TopUpMessageOperationProfile : Profile
     {
-        public WithdrawalOperationProfile()
+        public TopUpMessageOperationProfile()
         {
             SourceMemberNamingConvention = LowerUnderscoreNamingConvention.Instance;
             DestinationMemberNamingConvention = PascalCaseNamingConvention.Instance;
 
-            CreateMap<WithdrawalOperationDto, WithdrawalOperationRequest>().ReverseMap();
+            CreateMap<TopUpOperationDto, ReplenishmentOperationRequest>().ReverseMap();
         }
     }
 }

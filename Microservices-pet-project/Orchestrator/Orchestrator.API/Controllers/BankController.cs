@@ -49,6 +49,10 @@ namespace Orchestrator.Controllers
             {
                 return NotFound();
             }
+            catch (InvalidOperationException)
+            {
+                return BadRequest("\r\ninsufficient funds");
+            }
 
             return Ok();
         }

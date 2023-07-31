@@ -53,7 +53,7 @@ namespace AccountManagementMicroservice.MessagingService
 
                 var balance = await _accountInformationService.GetAccountBalance(operation.AccountName);
 
-                await context.RespondAsync(new WithdrawalOperationResponse
+                await context.RespondAsync<WithdrawalOperationResponse>(new
                 {
                     AccountName = operation.AccountName,
                     AccountBalance = balance

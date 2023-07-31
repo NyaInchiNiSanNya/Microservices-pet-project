@@ -16,11 +16,11 @@ namespace AccountManagementMicroservice.BusinessLogic
 
         public async Task WithdrawMoneyFromAccount(WithdrawalOperationDto withdrawalOperationDto)
         {
-            //await _mediator.Send(new WithdrawalOperationCommand()
-            //{
-            //    summToWithdrawal = withdrawalOperationDto.WithdrawalAmount,
-            //    accountName = withdrawalOperationDto.AccountName
-            //});
+            await _mediator.Send(new WithdrawalOperationCommand()
+            {
+                summToWithdrawal = withdrawalOperationDto.WithdrawalAmount,
+                accountName = withdrawalOperationDto.AccountName
+            });
         }
     }
 }
