@@ -2,7 +2,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Orchestrator.API.RequestModels;
 using Orchestrator.IService;
-using Orchestrator.SharedModels.Request;
+using ShareModel.Requests;
 
 namespace Orchestrator.Controllers
 {
@@ -27,10 +27,27 @@ namespace Orchestrator.Controllers
         [HttpPost]
         public async Task<IActionResult> Get([FromBody] OperationRequest operationRequest)
         {
-            if (operationRequest.Withdrawal)
+
+            try
             {
-               await _bankManagement.SendWithdrawalOperationMessage(
-                    _mapper.Map<WithdrawalOperationRequest>(operationRequest));
+                if (operationRequest.Withdrawal)
+                {
+                    var newBalance = await _bankManagement.SendWithdrawalOperationMessage(
+                        _mapper.Map<WithdrawalOperationRequest>(operationRequest));
+                }
+
+                if (operationRequest.Replenishment)
+                {
+                    var newBalance = await _bankManagement.SendReplenishmentOperationMessage(
+                        _mapper.Map<ReplenishmentOperationRequest>(operationRequest));
+                }
+
+
+
+            }
+            catch (NullReferenceException)
+            {
+                return NotFound();
             }
 
             return Ok();

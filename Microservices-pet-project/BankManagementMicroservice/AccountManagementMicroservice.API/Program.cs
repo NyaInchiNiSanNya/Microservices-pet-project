@@ -1,17 +1,18 @@
 using AccountManagementMicroservice.BusinessLogic;
 using AccountManagementMicroservice.CQRS.CommandsHandler;
 using AccountManagementMicroservice.Data;
+using AccountManagementMicroservice.FluentValidation;
 using AccountManagementMicroservice.IServices;
+using AccountManagementMicroservice.MappingProfiles;
 using AccountManagementMicroservice.MessagingService;
 using AccountManagementMicroservice.RequestModel;
-using AccountManagementMicroservice.SharedModels;
-using AccountManagementMicroservice.SharedModels.Requests;
 using FluentValidation;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
+using ShareModel.Requests;
 
 
-    namespace BankManagementMicroservice
+namespace BankManagementMicroservice
 {
     public class Program
     {
@@ -45,18 +46,21 @@ using Microsoft.EntityFrameworkCore;
                         h.Password("guest");
                     });
 
-                    config.ReceiveEndpoint("withdrawal_queue", ep =>
+                    config.ReceiveEndpoint("withdrawal_queue1", ep =>
                     {
                         ep.PrefetchCount = 16;
                         ep.UseMessageRetry(r => r.Interval(2, 100));
                         ep.ConfigureConsumer<WithdrawalMessageService>(provider);
-                        ep.Bind<WithdrawalOperationRequest>(); 
                     });
+
                 }));
+
             });
 
             builder.Services.AddValidatorsFromAssemblyContaining<PostWithdrawalRequest>();
+            builder.Services.AddValidatorsFromAssemblyContaining<ReplenishmentOperationRequestValidator>();
             builder.Services.AddAutoMapper(typeof(Program));
+            builder.Services.AddAutoMapper(typeof(TopUpOperationProfile));
             builder.Services.AddScoped<IWithdrawOperationService, WithdrawOperationService>();
             builder.Services.AddScoped<IAccountInformationService,AccountInformationService>();
             builder.Services.AddScoped<ITopUpOperationService, TopUpOperationService>();

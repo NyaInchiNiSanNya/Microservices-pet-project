@@ -3,7 +3,6 @@ using AccountInformationMicroservice.CQRS.Commands;
 using AccountInformationMicroservice.Data.DbSettings;
 using AccountInformationMicroservice.IServices;
 using AccountInformationMicroservice.Services;
-using AccountManagementMicroservice.MessagingService;
 using FluentValidation;
 using MassTransit;
 using Microsoft.Extensions.Options;
@@ -26,26 +25,6 @@ namespace AccountInformationMicroservice
             builder.Services.AddSingleton<IAccountDBsettings>(sp =>
                 sp.GetRequiredService<IOptions<AccountDBSettings>>().Value);
             
-            builder.Services.AddMassTransit(x =>
-            {
-                x.AddConsumer<WithdrawalMessageService>();
-
-                x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
-                {
-                    cfg.Host("rabbitmq://localhost", h =>
-                    {
-                        h.Username("guest");
-                        h.Password("guest");
-                    });
-
-                    cfg.ReceiveEndpoint("Queue7", ep =>
-                    {
-                        ep.PrefetchCount = 16;
-                        ep.UseMessageRetry(r => r.Interval(2, 100));
-                        ep.ConfigureConsumer<WithdrawalMessageService>(provider);
-                    });
-                }));
-            });
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

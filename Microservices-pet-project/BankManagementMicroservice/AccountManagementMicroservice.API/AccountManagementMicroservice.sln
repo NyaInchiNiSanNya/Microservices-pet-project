@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagementMicroservi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagementMicroservice.IServices", "..\AccountManagementMicroservice.IServices\AccountManagementMicroservice.IServices.csproj", "{830BDE9B-5B6E-4131-AAC7-BF9489B92176}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagementMicroservice.SharedModels", "..\AccountManagementMicroservice.SharedModels\AccountManagementMicroservice.SharedModels.csproj", "{69FB0871-4FFD-40D1-9DAD-84015DDACDC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagementMicroservice.MessagingService", "..\AccountManagementMicroservice.MessagingService\AccountManagementMicroservice.MessagingService.csproj", "{AFDCD1F2-01E0-4650-B347-326EC026A80A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagementMicroservice.MessagingService", "..\AccountManagementMicroservice.MessagingService\AccountManagementMicroservice.MessagingService.csproj", "{AFDCD1F2-01E0-4650-B347-326EC026A80A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareModel", "..\..\ShareModel\ShareModel.csproj", "{32807781-AB29-42F2-A742-4E7FF69C4036}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,14 +49,14 @@ Global
 		{830BDE9B-5B6E-4131-AAC7-BF9489B92176}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{830BDE9B-5B6E-4131-AAC7-BF9489B92176}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{830BDE9B-5B6E-4131-AAC7-BF9489B92176}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69FB0871-4FFD-40D1-9DAD-84015DDACDC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69FB0871-4FFD-40D1-9DAD-84015DDACDC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69FB0871-4FFD-40D1-9DAD-84015DDACDC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69FB0871-4FFD-40D1-9DAD-84015DDACDC1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AFDCD1F2-01E0-4650-B347-326EC026A80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AFDCD1F2-01E0-4650-B347-326EC026A80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFDCD1F2-01E0-4650-B347-326EC026A80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFDCD1F2-01E0-4650-B347-326EC026A80A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32807781-AB29-42F2-A742-4E7FF69C4036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32807781-AB29-42F2-A742-4E7FF69C4036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32807781-AB29-42F2-A742-4E7FF69C4036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32807781-AB29-42F2-A742-4E7FF69C4036}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,6 @@
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\bin\Debug\net6.0\Orchestrator.IService.deps.json
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\bin\Debug\net6.0\Orchestrator.IService.dll
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\bin\Debug\net6.0\Orchestrator.IService.pdb
-C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\bin\Debug\net6.0\Orchestrator.SharedModels.dll
-C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\bin\Debug\net6.0\Orchestrator.SharedModels.pdb
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\obj\Debug\net6.0\Orchestrator.IService.csproj.AssemblyReference.cache
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\obj\Debug\net6.0\Orchestrator.IService.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\obj\Debug\net6.0\Orchestrator.IService.AssemblyInfoInputs.cache
@@ -13,3 +11,5 @@ C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orches
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\obj\Debug\net6.0\refint\Orchestrator.IService.dll
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\obj\Debug\net6.0\Orchestrator.IService.pdb
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\obj\Debug\net6.0\ref\Orchestrator.IService.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\bin\Debug\net6.0\ShareModel.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.IService\bin\Debug\net6.0\ShareModel.pdb

@@ -21,9 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\ShareModel\ShareModel.csproj" />
     <ProjectReference Include="..\Orchestrator.IService\Orchestrator.IService.csproj" />
     <ProjectReference Include="..\Orchestrator.MessagingService\Orchestrator.MessagingService.csproj" />
-    <ProjectReference Include="..\Orchestrator.SharedModels\Orchestrator.SharedModels.csproj" />
   </ItemGroup>
 
 </Project>

@@ -16,8 +16,8 @@
           "Newtonsoft.Json": "13.0.3",
           "Orchestrator.IService": "1.0.0",
           "Orchestrator.MessagingService": "1.0.0",
-          "Orchestrator.SharedModels": "1.0.0",
           "RabbitMQ.Client": "6.5.0",
+          "ShareModel": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -252,7 +252,7 @@
       },
       "Orchestrator.IService/1.0.0": {
         "dependencies": {
-          "Orchestrator.SharedModels": "1.0.0"
+          "ShareModel": "1.0.0"
         },
         "runtime": {
           "Orchestrator.IService.dll": {}
@@ -263,15 +263,15 @@
           "MassTransit": "8.0.16",
           "MassTransit.RabbitMQ": "8.0.16",
           "Orchestrator.IService": "1.0.0",
-          "Orchestrator.SharedModels": "1.0.0"
+          "ShareModel": "1.0.0"
         },
         "runtime": {
           "Orchestrator.MessagingService.dll": {}
         }
       },
-      "Orchestrator.SharedModels/1.0.0": {
+      "ShareModel/1.0.0": {
         "runtime": {
-          "Orchestrator.SharedModels.dll": {}
+          "ShareModel.dll": {}
         }
       }
     }
@@ -516,7 +516,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Orchestrator.SharedModels/1.0.0": {
+    "ShareModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

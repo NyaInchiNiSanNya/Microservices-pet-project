@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\bin\Debug\net6.0\ShareModel.deps.json
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\bin\Debug\net6.0\ShareModel.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\bin\Debug\net6.0\ShareModel.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\obj\Debug\net6.0\ShareModel.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\obj\Debug\net6.0\ShareModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\obj\Debug\net6.0\ShareModel.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\obj\Debug\net6.0\ShareModel.AssemblyInfo.cs
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\obj\Debug\net6.0\ShareModel.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\obj\Debug\net6.0\ShareModel.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\obj\Debug\net6.0\refint\ShareModel.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\obj\Debug\net6.0\ShareModel.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\ShareModel\obj\Debug\net6.0\ref\ShareModel.dll

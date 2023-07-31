@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Orchestrator.API.RequestModels;
-using Orchestrator.SharedModels.Request;
+using ShareModel.Requests;
 
 namespace Orchestrator.API.MappingProfiles
 {

@@ -23,10 +23,11 @@ namespace AccountManagementMicroservice.BusinessLogic
 
         public async Task<Decimal> GetAccountBalance(String accountName)
         {
-            return await _mediator.Send(new GetAccountBalanceQuery()
-            {
-                accountName = accountName
-            });
+            return 10;
+            //return await _mediator.Send(new GetAccountBalanceQuery()
+            //{
+            //    accountName = accountName
+            //});
         }
     }
 }

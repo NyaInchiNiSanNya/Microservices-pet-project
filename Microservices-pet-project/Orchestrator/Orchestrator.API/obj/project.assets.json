@@ -500,7 +500,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Orchestrator.SharedModels": "1.0.0"
+          "ShareModel": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Orchestrator.IService.dll": {}
@@ -516,7 +516,7 @@
           "MassTransit": "8.0.16",
           "MassTransit.RabbitMQ": "8.0.16",
           "Orchestrator.IService": "1.0.0",
-          "Orchestrator.SharedModels": "1.0.0"
+          "ShareModel": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Orchestrator.MessagingService.dll": {}
@@ -525,14 +525,14 @@
           "bin/placeholder/Orchestrator.MessagingService.dll": {}
         }
       },
-      "Orchestrator.SharedModels/1.0.0": {
+      "ShareModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Orchestrator.SharedModels.dll": {}
+          "bin/placeholder/ShareModel.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Orchestrator.SharedModels.dll": {}
+          "bin/placeholder/ShareModel.dll": {}
         }
       }
     }
@@ -1693,10 +1693,10 @@
       "path": "../Orchestrator.MessagingService/Orchestrator.MessagingService.csproj",
       "msbuildProject": "../Orchestrator.MessagingService/Orchestrator.MessagingService.csproj"
     },
-    "Orchestrator.SharedModels/1.0.0": {
+    "ShareModel/1.0.0": {
       "type": "project",
-      "path": "../Orchestrator.SharedModels/Orchestrator.SharedModels.csproj",
-      "msbuildProject": "../Orchestrator.SharedModels/Orchestrator.SharedModels.csproj"
+      "path": "../../ShareModel/ShareModel.csproj",
+      "msbuildProject": "../../ShareModel/ShareModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1709,8 +1709,8 @@
       "Newtonsoft.Json >= 13.0.3",
       "Orchestrator.IService >= 1.0.0",
       "Orchestrator.MessagingService >= 1.0.0",
-      "Orchestrator.SharedModels >= 1.0.0",
       "RabbitMQ.Client >= 6.5.0",
+      "ShareModel >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -1748,8 +1748,8 @@
             "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.MessagingService\\Orchestrator.MessagingService.csproj": {
               "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.MessagingService\\Orchestrator.MessagingService.csproj"
             },
-            "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj"
+            "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj"
             }
           }
         }

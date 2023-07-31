@@ -715,6 +715,16 @@
         "runtime": {
           "bin/placeholder/AccountManagementMicroservice.SharedModels.dll": {}
         }
+      },
+      "ShareModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ShareModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShareModel.dll": {}
+        }
       }
     }
   },
@@ -1765,6 +1775,11 @@
       "type": "project",
       "path": "../AccountManagementMicroservice.SharedModels/AccountManagementMicroservice.SharedModels.csproj",
       "msbuildProject": "../AccountManagementMicroservice.SharedModels/AccountManagementMicroservice.SharedModels.csproj"
+    },
+    "ShareModel/1.0.0": {
+      "type": "project",
+      "path": "../../ShareModel/ShareModel.csproj",
+      "msbuildProject": "../../ShareModel/ShareModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1777,7 +1792,8 @@
       "FluentValidation.DependencyInjectionExtensions >= 11.6.0",
       "MassTransit >= 8.0.16",
       "MassTransit.RabbitMQ >= 8.0.16",
-      "RabbitMQ.Client >= 6.5.0"
+      "RabbitMQ.Client >= 6.5.0",
+      "ShareModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1812,6 +1828,9 @@
             },
             "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.SharedModels\\AccountManagementMicroservice.SharedModels.csproj": {
               "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\BankManagementMicroservice\\AccountManagementMicroservice.SharedModels\\AccountManagementMicroservice.SharedModels.csproj"
+            },
+            "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj"
             }
           }
         }

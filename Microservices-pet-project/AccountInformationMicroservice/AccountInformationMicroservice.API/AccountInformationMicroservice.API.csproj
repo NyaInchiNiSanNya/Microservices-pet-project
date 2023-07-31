@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\BankManagementMicroservice\AccountManagementMicroservice.MessagingService\AccountManagementMicroservice.MessagingService.csproj" />
+    <ProjectReference Include="..\..\ShareModel\ShareModel.csproj" />
     <ProjectReference Include="..\AccountInformationMicroservice.CQRS\AccountInformationMicroservice.CQRS.csproj" />
     <ProjectReference Include="..\AccountInformationMicroservice.Data\AccountInformationMicroservice.Data.csproj" />
     <ProjectReference Include="..\AccountInformationMicroservice.DTOs\AccountInformationMicroservice.DTOs.csproj" />

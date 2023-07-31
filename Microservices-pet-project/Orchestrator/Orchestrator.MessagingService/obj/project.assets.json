@@ -355,7 +355,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Orchestrator.SharedModels": "1.0.0"
+          "ShareModel": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Orchestrator.IService.dll": {}
@@ -364,14 +364,14 @@
           "bin/placeholder/Orchestrator.IService.dll": {}
         }
       },
-      "Orchestrator.SharedModels/1.0.0": {
+      "ShareModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Orchestrator.SharedModels.dll": {}
+          "bin/placeholder/ShareModel.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Orchestrator.SharedModels.dll": {}
+          "bin/placeholder/ShareModel.dll": {}
         }
       }
     }
@@ -980,10 +980,10 @@
       "path": "../Orchestrator.IService/Orchestrator.IService.csproj",
       "msbuildProject": "../Orchestrator.IService/Orchestrator.IService.csproj"
     },
-    "Orchestrator.SharedModels/1.0.0": {
+    "ShareModel/1.0.0": {
       "type": "project",
-      "path": "../Orchestrator.SharedModels/Orchestrator.SharedModels.csproj",
-      "msbuildProject": "../Orchestrator.SharedModels/Orchestrator.SharedModels.csproj"
+      "path": "../../ShareModel/ShareModel.csproj",
+      "msbuildProject": "../../ShareModel/ShareModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -991,7 +991,7 @@
       "MassTransit >= 8.0.16",
       "MassTransit.RabbitMQ >= 8.0.16",
       "Orchestrator.IService >= 1.0.0",
-      "Orchestrator.SharedModels >= 1.0.0"
+      "ShareModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1024,8 +1024,8 @@
             "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.IService\\Orchestrator.IService.csproj": {
               "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.IService\\Orchestrator.IService.csproj"
             },
-            "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj"
+            "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj"
             }
           }
         }

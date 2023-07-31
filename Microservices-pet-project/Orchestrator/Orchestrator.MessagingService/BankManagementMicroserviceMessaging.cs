@@ -1,32 +1,56 @@
 ﻿using MassTransit;
 using Orchestrator.IService;
-using WithdrawalOperationRequest = Orchestrator.SharedModels.Request.WithdrawalOperationRequest;
+using ShareModel.Requests;
+using ShareModel.Response;
 
 
 namespace Orchestrator.MessagingService
 {
     public class BankManagementMicroserviceMessaging : IBankManagementMicroserviceMessaging
     {
-        private readonly IPublishEndpoint _publishEndpoint;
+        IRequestClient<WithdrawalOperationRequest> _clientWithdrawal;
+        IRequestClient<ReplenishmentOperationRequest> _clientReplenishment;
 
-        public BankManagementMicroserviceMessaging(IPublishEndpoint publishEndpoint)
+        public BankManagementMicroserviceMessaging(IRequestClient<WithdrawalOperationRequest> clientWithdrawal
+            , IRequestClient<ReplenishmentOperationRequest> clientReplenishment)
         {
-        _publishEndpoint= publishEndpoint;
-
+            _clientWithdrawal = clientWithdrawal;
+            _clientReplenishment = clientReplenishment;
         }
 
         public async Task<Decimal> SendWithdrawalOperationMessage(WithdrawalOperationRequest withdrawalOperationRequestModel)
         {
-            await _publishEndpoint.Publish<WithdrawalOperationRequest>(new
+            var response = await _clientWithdrawal.GetResponse<WithdrawalOperationResponse>(new
             {
                 withdrawalOperationRequestModel.AccountName,
                 withdrawalOperationRequestModel.Amount
             });
 
 
-            return 1000;
+            if (String.IsNullOrEmpty(response.Message.AccountName))
+            {
+                throw new NullReferenceException(nameof(withdrawalOperationRequestModel));
+            }
+
+            return response.Message.AccountBalance;
         }
 
-    }
+        public async Task<Decimal> SendReplenishmentOperationMessage(ReplenishmentOperationRequest replenishmentOperationRequestModel)
+        {
+            var response = await _clientReplenishment.GetResponse<ReplenishmentOperationResponse>(new
+            {
+                replenishmentOperationRequestModel.AccountName,
+                replenishmentOperationRequestModel.Amount
+            });
 
+
+            if (String.IsNullOrEmpty(response.Message.AccountName))
+            {
+                throw new NullReferenceException(nameof(replenishmentOperationRequestModel));
+            }
+
+            return response.Message.AccountBalance;
+
+        }
+    }
 }

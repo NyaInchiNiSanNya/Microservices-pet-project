@@ -30,10 +30,8 @@ C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orches
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\bin\Debug\net6.0\System.Threading.Channels.dll
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\bin\Debug\net6.0\Orchestrator.IService.dll
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\bin\Debug\net6.0\Orchestrator.MessagingService.dll
-C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\bin\Debug\net6.0\Orchestrator.SharedModels.dll
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\bin\Debug\net6.0\Orchestrator.IService.pdb
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\bin\Debug\net6.0\Orchestrator.MessagingService.pdb
-C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\bin\Debug\net6.0\Orchestrator.SharedModels.pdb
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\obj\Debug\net6.0\staticwebassets\msbuild.Orchestrator.API.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Orchestrator.API.props
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Orchestrator.API.props
@@ -48,3 +46,5 @@ C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orches
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\obj\Debug\net6.0\Orchestrator.API.pdb
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\obj\Debug\net6.0\Orchestrator.API.genruntimeconfig.cache
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\obj\Debug\net6.0\ref\Orchestrator.API.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\bin\Debug\net6.0\ShareModel.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Orchestrator\Orchestrator.API\bin\Debug\net6.0\ShareModel.pdb

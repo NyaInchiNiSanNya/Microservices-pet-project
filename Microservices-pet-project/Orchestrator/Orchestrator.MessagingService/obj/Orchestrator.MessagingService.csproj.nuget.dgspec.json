@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj"
+              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj"
               }
             }
           }
@@ -90,8 +90,8 @@
               "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.IService\\Orchestrator.IService.csproj": {
                 "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.IService\\Orchestrator.IService.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj"
+              "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj"
               }
             }
           }
@@ -135,14 +135,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj": {
+    "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj",
-        "projectName": "Orchestrator.SharedModels",
-        "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\Orchestrator.SharedModels.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj",
+        "projectName": "ShareModel",
+        "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\ShareModel.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.SharedModels\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\ShareModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zGcsq4rlQQHMklU4gT0V1mAvxVDXeMi1pg958V6qH7W3ihOfn9/ngriXqeQmYg5lTc0fJ+Z95vogXF7N+B3rLg==",
+  "dgSpecHash": "B36MnEhjIJzKNa7hM4UOz5tPAL5EYdmNc+P8t7cJou/vW2O6p8Vv/7Rlzd+Xwp7YtiHQ4m6KeQPediyNtq/6kg==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\Orchestrator\\Orchestrator.MessagingService\\Orchestrator.MessagingService.csproj",
   "expectedPackageFiles": [
