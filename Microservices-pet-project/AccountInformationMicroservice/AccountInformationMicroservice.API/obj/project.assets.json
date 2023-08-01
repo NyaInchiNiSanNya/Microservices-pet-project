@@ -842,6 +842,25 @@
           "bin/placeholder/AccountInformationMicroservice.IServices.dll": {}
         }
       },
+      "AccountInformationMicroservice.MessagingConsume/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AccountInformationMicroservice.DTOs": "1.0.0",
+          "AccountInformationMicroservice.IServices": "1.0.0",
+          "AutoMapper": "12.0.1",
+          "FluentValidation": "11.6.0",
+          "MassTransit": "8.0.16",
+          "MassTransit.RabbitMQ": "8.0.16",
+          "ShareModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AccountInformationMicroservice.MessagingConsume.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountInformationMicroservice.MessagingConsume.dll": {}
+        }
+      },
       "AccountInformationMicroservice.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2407,6 +2426,11 @@
       "path": "../AccountInformationMicroservice.IServices/AccountInformationMicroservice.IServices.csproj",
       "msbuildProject": "../AccountInformationMicroservice.IServices/AccountInformationMicroservice.IServices.csproj"
     },
+    "AccountInformationMicroservice.MessagingConsume/1.0.0": {
+      "type": "project",
+      "path": "../AccountInformationMicroservice.MessagingConsume/AccountInformationMicroservice.MessagingConsume.csproj",
+      "msbuildProject": "../AccountInformationMicroservice.MessagingConsume/AccountInformationMicroservice.MessagingConsume.csproj"
+    },
     "AccountInformationMicroservice.Services/1.0.0": {
       "type": "project",
       "path": "../AccountInformationMicroservice.Services/AccountInformationMicroservice.Services.csproj",
@@ -2424,6 +2448,7 @@
       "AccountInformationMicroservice.DTOs >= 1.0.0",
       "AccountInformationMicroservice.Data >= 1.0.0",
       "AccountInformationMicroservice.IServices >= 1.0.0",
+      "AccountInformationMicroservice.MessagingConsume >= 1.0.0",
       "AccountInformationMicroservice.Services >= 1.0.0",
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
@@ -2476,6 +2501,9 @@
             },
             "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\AccountInformationMicroservice\\AccountInformationMicroservice.IServices\\AccountInformationMicroservice.IServices.csproj": {
               "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\AccountInformationMicroservice\\AccountInformationMicroservice.IServices\\AccountInformationMicroservice.IServices.csproj"
+            },
+            "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\AccountInformationMicroservice\\AccountInformationMicroservice.MessagingConsume\\AccountInformationMicroservice.MessagingConsume.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\AccountInformationMicroservice\\AccountInformationMicroservice.MessagingConsume\\AccountInformationMicroservice.MessagingConsume.csproj"
             },
             "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\AccountInformationMicroservice\\AccountInformationMicroservice.Services\\AccountInformationMicroservice.Services.csproj": {
               "projectPath": "C:\\Users\\User\\Desktop\\Microservices-pet-project\\Microservices-pet-project\\AccountInformationMicroservice\\AccountInformationMicroservice.Services\\AccountInformationMicroservice.Services.csproj"

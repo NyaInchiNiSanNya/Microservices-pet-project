@@ -1,14 +1,21 @@
 version: '3.4'
 
 services:
+  rabbitmq:
+    image: rabbitmq:3.10.6-management-alpine
+    hostname: my-rabbitmq
+    ports:
+      - 5672:5672
+      - 5671:5671
+      - 15672:15672
   bank_management_microservice:
     image: bank_management_microservice
     restart: on-failure
     ports:
       - "6601:80"
     build:
-      context: ./BankManagementMicroservice
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: BankManagementDockerfile
     depends_on:
       - postgres
       - rabbitmq
@@ -18,10 +25,20 @@ services:
     ports:
       - "6602:80"
     build:
-      context: ./AccountInformationMicroservice
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: AccountInformationDockerfile
     depends_on:
       - mongodb
+      - rabbitmq
+  orchestrator:
+    image: orchestrator
+    restart: on-failure
+    ports:
+      - "6603:80"
+    build:
+      context: .
+      dockerfile: OrchestratorDockerfile
+    depends_on:
       - rabbitmq
   postgres:
     image: postgres:13.3
@@ -38,12 +55,6 @@ services:
     ports:
       - "27018:27017"
     volumes:
-      - ./mongo_scripts:/docker-entrypoint-initdb.d
-  rabbitmq:
-    image: rabbitmq:3.10.6-management-alpine
-    hostname: my-rabbitmq
-    ports:
-      - "5672:5672"  
-      - "15672:15672"  
+      - ./mongo_scripts:/docker-entrypoint-initdb.d 
 volumes:
   mongodb_data:

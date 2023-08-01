@@ -2,6 +2,7 @@ using AccountInformationMicroservice.API.FluentValidation;
 using AccountInformationMicroservice.CQRS.Commands;
 using AccountInformationMicroservice.Data.DbSettings;
 using AccountInformationMicroservice.IServices;
+using AccountInformationMicroservice.MessagingConsume;
 using AccountInformationMicroservice.Services;
 using FluentValidation;
 using MassTransit;
@@ -24,7 +25,31 @@ namespace AccountInformationMicroservice
 
             builder.Services.AddSingleton<IAccountDBsettings>(sp =>
                 sp.GetRequiredService<IOptions<AccountDBSettings>>().Value);
-            
+
+            builder.Services.AddMassTransit(x =>
+            {
+                x.AddConsumer<GetBalanceMessageService>();
+                x.AddConsumer<UpdateBalanceMessageService>();
+
+                x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
+                {
+                    config.Host("rabbitmq://rabbitmq", h =>
+                    {
+                        h.Username("guest");
+                        h.Password("guest");
+                    });
+
+                    config.ReceiveEndpoint("account_info_queue", ep =>
+                    {
+                        ep.PrefetchCount = 16;
+                        ep.UseMessageRetry(r => r.Interval(2, 100));
+                        ep.ConfigureConsumer<GetBalanceMessageService>(provider);
+                        ep.ConfigureConsumer<UpdateBalanceMessageService>(provider);
+                    });
+
+                }));
+
+            });
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

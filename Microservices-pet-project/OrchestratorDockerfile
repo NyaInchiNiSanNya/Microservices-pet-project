@@ -1,0 +1,26 @@
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+
+COPY ["Orchestrator/Orchestrator.API/Orchestrator.API.csproj", "Orchestrator/Orchestrator.API/"]
+COPY ["Orchestrator/Orchestrator.IService/Orchestrator.IService.csproj", "Orchestrator/Orchestrator.IService/"]
+COPY ["Orchestrator/Orchestrator.MessagingService/Orchestrator.MessagingService.csproj", "Orchestrator/Orchestrator.MessagingService/"]
+COPY ShareModel/ShareModel.csproj ShareModel/
+RUN dotnet restore "Orchestrator/Orchestrator.API/Orchestrator.API.csproj"
+
+COPY . .
+
+WORKDIR "/src/Orchestrator/Orchestrator.API/"
+RUN dotnet build -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish -c Release -o /app/publish
+
+FROM base AS runtime
+
+COPY --from=publish /app/publish .
+RUN ls -l /app
+
+ENTRYPOINT ["dotnet", "Orchestrator.API.dll"]

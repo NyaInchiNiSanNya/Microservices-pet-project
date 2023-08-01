@@ -41,13 +41,13 @@ namespace BankManagementMicroservice
 
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
                 {
-                    config.Host("rabbitmq://localhost", h =>
+                    config.Host("rabbitmq://rabbitmq", h =>
                     {
                         h.Username("guest");
                         h.Password("guest");
                     });
 
-                    config.ReceiveEndpoint("withdrawal_queue1", ep =>
+                    config.ReceiveEndpoint("operation_queue", ep =>
                     {
                         ep.PrefetchCount = 16;
                         ep.UseMessageRetry(r => r.Interval(2, 100));

@@ -70,3 +70,5 @@ C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\Accoun
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.API\bin\Debug\net6.0\System.Threading.Channels.dll
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.API\bin\Debug\net6.0\ShareModel.dll
 C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.API\bin\Debug\net6.0\ShareModel.pdb
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.API\bin\Debug\net6.0\AccountInformationMicroservice.MessagingConsume.dll
+C:\Users\User\Desktop\Microservices-pet-project\Microservices-pet-project\AccountInformationMicroservice\AccountInformationMicroservice.API\bin\Debug\net6.0\AccountInformationMicroservice.MessagingConsume.pdb

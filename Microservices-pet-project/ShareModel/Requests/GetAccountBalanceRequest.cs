@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShareModel.Requests
 {
-    public class AccountInformationRequest
+    public class GetAccountBalanceRequest
     {
         public String AccountName { get; set; }
     }

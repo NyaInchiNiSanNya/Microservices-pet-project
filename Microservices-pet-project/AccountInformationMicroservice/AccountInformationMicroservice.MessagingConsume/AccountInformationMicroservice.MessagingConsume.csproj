@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.6.0" />
+    <PackageReference Include="MassTransit" Version="8.0.16" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ShareModel\ShareModel.csproj" />
+    <ProjectReference Include="..\AccountInformationMicroservice.DTOs\AccountInformationMicroservice.DTOs.csproj" />
+    <ProjectReference Include="..\AccountInformationMicroservice.IServices\AccountInformationMicroservice.IServices.csproj" />
+  </ItemGroup>
+
+</Project>

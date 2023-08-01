@@ -3,6 +3,6 @@
     public class ReplenishmentOperationResponse
     {
         public String AccountName { get; set; }
-        public decimal AccountBalance { get; set; }
+        public Decimal AccountBalance { get; set; }
     }
 }

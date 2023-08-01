@@ -26,6 +26,7 @@
     <ProjectReference Include="..\AccountInformationMicroservice.Data\AccountInformationMicroservice.Data.csproj" />
     <ProjectReference Include="..\AccountInformationMicroservice.DTOs\AccountInformationMicroservice.DTOs.csproj" />
     <ProjectReference Include="..\AccountInformationMicroservice.IServices\AccountInformationMicroservice.IServices.csproj" />
+    <ProjectReference Include="..\AccountInformationMicroservice.MessagingConsume\AccountInformationMicroservice.MessagingConsume.csproj" />
     <ProjectReference Include="..\AccountInformationMicroservice.Services\AccountInformationMicroservice.Services.csproj" />
   </ItemGroup>
 

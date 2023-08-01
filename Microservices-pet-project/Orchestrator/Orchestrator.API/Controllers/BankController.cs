@@ -12,9 +12,11 @@ namespace Orchestrator.Controllers
     {
 
         private readonly IBankManagementMicroserviceMessaging _bankManagement;
+        private readonly IAccountInformationMicroserviceMessaging _accountInformation;
         private readonly IMapper _mapper;
 
         public BankController(IBankManagementMicroserviceMessaging bankManagement,
+            IAccountInformationMicroserviceMessaging accountInformation,
             IMapper mapper)
         {
             _bankManagement=bankManagement
@@ -22,6 +24,9 @@ namespace Orchestrator.Controllers
 
             _mapper = mapper
                       ?? throw new NullReferenceException(nameof(mapper));
+
+            _accountInformation = accountInformation
+                                  ?? throw new NullReferenceException(nameof(accountInformation));
         }
 
         [HttpPost]
@@ -30,19 +35,25 @@ namespace Orchestrator.Controllers
 
             try
             {
+                Decimal newBalance=12;
+
                 if (operationRequest.Withdrawal)
                 {
-                    var newBalance = await _bankManagement.SendWithdrawalOperationMessage(
+                    newBalance = await _bankManagement.SendWithdrawalOperationMessage(
                         _mapper.Map<WithdrawalOperationRequest>(operationRequest));
                 }
 
                 if (operationRequest.Replenishment)
                 {
-                    var newBalance = await _bankManagement.SendReplenishmentOperationMessage(
+                    newBalance = await _bankManagement.SendReplenishmentOperationMessage(
                         _mapper.Map<ReplenishmentOperationRequest>(operationRequest));
                 }
 
-
+                await _accountInformation.SendNewBalanceMessage(new UpdateAccountBalanceRequest()
+                {
+                    AccountName = operationRequest.AccountName,
+                    newBalance = newBalance
+                });
 
             }
             catch (NullReferenceException)
@@ -55,6 +66,26 @@ namespace Orchestrator.Controllers
             }
 
             return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get([FromQuery] GetAccountBalanceRequest operationRequest)
+        {
+            
+            try
+            {
+                return Ok(await _accountInformation.GetBalanceMessage(new GetAccountBalanceRequest()
+                {
+                    AccountName = operationRequest.AccountName,
+                }));
+
+            }
+            catch (NullReferenceException)
+            {
+
+                return NotFound();
+
+            }
         }
     }
 }

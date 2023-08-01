@@ -1,6 +1,7 @@
 ﻿using AccountInformationMicroservice.API.RequestModels;
 using AccountInformationMicroservice.DTOs;
 using AutoMapper;
+using ShareModel.Requests;
 
 namespace AccountInformationMicroservice.API.Profiles
 {
@@ -16,6 +17,13 @@ namespace AccountInformationMicroservice.API.Profiles
                     dest => dest.AccountBalance,
                     opt =>
                         opt.MapFrom(src => src.NewAccountBalance)
+                );
+
+            CreateMap<AccountInformationDto, UpdateAccountBalanceRequest>().ReverseMap()
+                .ForMember(
+                    dest => dest.AccountBalance,
+                    opt =>
+                        opt.MapFrom(src => src.newBalance)
                 );
         }
     }

@@ -1,0 +1,32 @@
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+
+COPY AccountInformationMicroservice/AccountInformationMicroservice.API/AccountInformationMicroservice.API.csproj AccountInformationMicroservice/AccountInformationMicroservice.API/
+COPY AccountInformationMicroservice/AccountInformationMicroservice.CQRS/AccountInformationMicroservice.CQRS.csproj AccountInformationMicroservice/AccountInformationMicroservice.CQRS/
+COPY AccountInformationMicroservice/AccountInformationMicroservice.Data/AccountInformationMicroservice.Data.csproj AccountInformationMicroservice/AccountInformationMicroservice.Data/
+COPY AccountInformationMicroservice/AccountInformationMicroservice.DTOs/AccountInformationMicroservice.DTOs.csproj AccountInformationMicroservice/AccountInformationMicroservice.DTOs/
+COPY AccountInformationMicroservice/AccountInformationMicroservice.IServices/AccountInformationMicroservice.IServices.csproj AccountInformationMicroservice/AccountInformationMicroservice.IServices/
+COPY AccountInformationMicroservice/AccountInformationMicroservice.Services/AccountInformationMicroservice.Services.csproj AccountInformationMicroservice/AccountInformationMicroservice.Services/
+COPY ShareModel/ShareModel.csproj ShareModel/
+
+# Восстанавливаем зависимости
+RUN dotnet restore AccountInformationMicroservice/AccountInformationMicroservice.API/AccountInformationMicroservice.API.csproj
+
+# Копируем все файлы в контейнер
+COPY . .
+
+WORKDIR /src/AccountInformationMicroservice/AccountInformationMicroservice.API/
+RUN dotnet build -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish -c Release -o /app/publish
+
+FROM base AS runtime
+
+COPY --from=publish /app/publish .
+RUN ls -l /app
+
+ENTRYPOINT ["dotnet", "AccountInformationMicroservice.API.dll"]

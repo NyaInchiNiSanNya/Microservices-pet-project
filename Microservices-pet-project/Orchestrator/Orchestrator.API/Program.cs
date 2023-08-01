@@ -16,14 +16,17 @@ namespace Orchestrator
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<IBankManagementMicroserviceMessaging, BankManagementMicroserviceMessaging>();
-
+            builder.Services.AddScoped<IAccountInformationMicroserviceMessaging, AccountInformationMicroserviceMessaging>();
             builder.Services.AddMassTransit(x =>
             {
                 x.AddRequestClient<WithdrawalOperationRequest>();
+                x.AddRequestClient<ReplenishmentOperationRequest>();
+                x.AddRequestClient<UpdateAccountBalanceRequest>();
+                x.AddRequestClient<GetAccountBalanceRequest>();
 
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
                 {
-                    config.Host("rabbitmq://localhost", h =>
+                    config.Host("rabbitmq://rabbitmq", h =>
                     {
                         h.Username("guest");
                         h.Password("guest");
@@ -34,11 +37,10 @@ namespace Orchestrator
             builder.Services.AddAutoMapper(typeof(Program));
             var app = builder.Build();
 
-            if (app.Environment.IsDevelopment())
-            {
+
                 app.UseSwagger();
                 app.UseSwaggerUI();
-            }
+            
 
             app.UseHttpsRedirection();
 

@@ -16,6 +16,12 @@ namespace Orchestrator.MessagingService
         {
             _clientWithdrawal = clientWithdrawal;
             _clientReplenishment = clientReplenishment;
+
+            _clientWithdrawal = clientWithdrawal
+                                ?? throw new NullReferenceException(nameof(clientWithdrawal));
+
+            _clientReplenishment = clientReplenishment
+                                   ?? throw new NullReferenceException(nameof(clientReplenishment));
         }
 
         public async Task<Decimal> SendWithdrawalOperationMessage(WithdrawalOperationRequest withdrawalOperationRequestModel)

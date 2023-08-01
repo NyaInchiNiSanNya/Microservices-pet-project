@@ -12,6 +12,7 @@
           "AccountInformationMicroservice.DTOs": "1.0.0",
           "AccountInformationMicroservice.Data": "1.0.0",
           "AccountInformationMicroservice.IServices": "1.0.0",
+          "AccountInformationMicroservice.MessagingConsume": "1.0.0",
           "AccountInformationMicroservice.Services": "1.0.0",
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
@@ -454,6 +455,20 @@
           "AccountInformationMicroservice.IServices.dll": {}
         }
       },
+      "AccountInformationMicroservice.MessagingConsume/1.0.0": {
+        "dependencies": {
+          "AccountInformationMicroservice.DTOs": "1.0.0",
+          "AccountInformationMicroservice.IServices": "1.0.0",
+          "AutoMapper": "12.0.1",
+          "FluentValidation": "11.6.0",
+          "MassTransit": "8.0.16",
+          "MassTransit.RabbitMQ": "8.0.16",
+          "ShareModel": "1.0.0"
+        },
+        "runtime": {
+          "AccountInformationMicroservice.MessagingConsume.dll": {}
+        }
+      },
       "AccountInformationMicroservice.Services/1.0.0": {
         "dependencies": {
           "AccountInformationMicroservice.CQRS": "1.0.0",
@@ -836,6 +851,11 @@
       "sha512": ""
     },
     "AccountInformationMicroservice.IServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AccountInformationMicroservice.MessagingConsume/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

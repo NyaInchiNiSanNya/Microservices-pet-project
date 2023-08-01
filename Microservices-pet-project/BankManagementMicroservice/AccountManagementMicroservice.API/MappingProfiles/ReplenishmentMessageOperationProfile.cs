@@ -11,7 +11,10 @@ namespace AccountManagementMicroservice.MappingProfiles
             SourceMemberNamingConvention = LowerUnderscoreNamingConvention.Instance;
             DestinationMemberNamingConvention = PascalCaseNamingConvention.Instance;
 
-            CreateMap<TopUpOperationDto, ReplenishmentOperationRequest>().ReverseMap();
+            CreateMap<TopUpOperationDto, ReplenishmentOperationRequest>().ReverseMap().ForMember(
+                dest => dest.TopUpAmount,
+                opt => opt.MapFrom(src => src.Amount)
+            );
         }
     }
 }
